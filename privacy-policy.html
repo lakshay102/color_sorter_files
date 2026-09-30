@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<!--
+  ============================================================
+  PRIVACY POLICY — TEMPLATE
+  ============================================================
+  BEFORE PUBLISHING, search the page for "[" and replace every
+  placeholder:
+
+    [YOUR APP NAME]      the app's public name
+    [YOUR NAME]          the developer/owner name
+    [YOUR EMAIL]         a real contact address
+    [EFFECTIVE DATE]     the date you publish/go live
+    [GITHUB PAGES URL]   this page's public URL (for the app)
+    [PRIVACY EMAIL]      email used as the ad-consent contact
+
+  Then DELETE the <div class="template-note"> banner and this
+  comment block.
+
+  Recommended minimal repo setup for GitHub Pages:
+    • push this file to docs/privacy-policy.html on the default branch
+    • Settings > Pages > Source: "Deploy from a branch" > Branch: main, /docs
+    • Publish to https://<user>.github.io/<repo>/privacy-policy.html
+  ============================================================
+-->
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Privacy Policy for [YOUR APP NAME]">
+<meta name="robots" content="index, follow">
+<title>Privacy Policy — [YOUR APP NAME]</title>
+<style>
+  :root {
+    --blue:        #3D5AFE;
+    --blue-dark:   #0031CA;
+    --blue-light:  #8187FF;
+    --amber:       #FFAB00;
+    --amber-light: #FFDD4B;
+    --ink:         #1c2333;
+    --ink-soft:    #4a5268;
+    --bg:          #f6f8ff;
+    --card:        #ffffff;
+    --line:        #e2e7f5;
+    --ph:          #ffab00;
+    --radius:      16px;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+                 "Helvetica Neue", Arial, sans-serif;
+    background: var(--bg);
+    color: var(--ink);
+    line-height: 1.75;
+    font-size: 17px;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: var(--blue); text-decoration: none; border-bottom: 1px solid rgba(61,90,254,.25); }
+  a:hover { color: var(--blue-dark); border-bottom-color: var(--blue-dark); }
+
+  /* Template banner — DELETE THIS AFTER FILLING PLACEHOLDERS */
+  .template-note {
+    background: #fff8e6;
+    border: 1px dashed var(--amber);
+    color: #6b4e00;
+    border-radius: 10px;
+    padding: 14px 18px;
+    margin: 24px auto 0;
+    max-width: 900px;
+    font-size: 15px;
+  }
+  .template-note strong { color: #8a6400; }
+
+  /* Placeholder tokens (easy to find by searching for "[") */
+  .ph {
+    background: #fff3d0;
+    border-bottom: 2px dotted var(--ph);
+    padding: 0 4px;
+    border-radius: 4px;
+    font-weight: 600;
+    cursor: help;
+  }
+
+  header {
+    background: linear-gradient(135deg, var(--blue-dark) 0%, var(--blue) 55%, var(--blue-light) 100%);
+    color: #fff;
+    padding: 56px 20px 44px;
+    text-align: center;
+  }
+  .header-inner { max-width: 900px; margin: 0 auto; }
+  .app-mark {
+    width: 72px; height: 72px;
+    margin: 0 auto 18px;
+    border-radius: 18px;
+    background: rgba(255,255,255,.14);
+    border: 1px solid rgba(255,255,255,.35);
+    position: relative;
+  }
+  /* little "liquid in a tube" mark, drawn with CSS (no images) */
+  .app-mark .tube {
+    position: absolute; left: 50%; top: 50%;
+    width: 26px; height: 40px;
+    transform: translate(-50%,-50%);
+    border: 2px solid #fff;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+  }
+  .app-mark .tube::after {
+    content: ""; position: absolute; left: 3px; right: 3px; bottom: 2px; top: 48%;
+    border-radius: 6px 6px 8px 8px;
+    background: linear-gradient(180deg, var(--amber-light), var(--amber));
+  }
+  header h1 {
+    font-size: clamp(26px, 5vw, 38px);
+    font-weight: 800;
+    letter-spacing: -.5px;
+  }
+  header p.sub {
+    margin-top: 10px;
+    opacity: .92;
+    font-size: 16px;
+  }
+  .updated {
+    display: inline-block;
+    margin-top: 18px;
+    padding: 6px 14px;
+    background: rgba(255,255,255,.16);
+    border: 1px solid rgba(255,255,255,.30);
+    border-radius: 999px;
+    font-size: 14px;
+    letter-spacing: .3px;
+  }
+
+  main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 34px 20px 80px;
+  }
+  .summary {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-left: 6px solid var(--amber);
+    border-radius: var(--radius);
+    padding: 22px 26px;
+    margin-bottom: 28px;
+    box-shadow: 0 6px 24px rgba(29,44,84,.06);
+  }
+  .summary h2 { font-size: 18px; margin-bottom: 10px; color: var(--blue-dark); }
+  .summary ul { padding-left: 20px; }
+  .summary li { margin: 6px 0; color: var(--ink-soft); }
+
+  section.card {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    padding: 26px 28px;
+    margin-bottom: 20px;
+    box-shadow: 0 6px 24px rgba(29,44,84,.04);
+  }
+  section.card h2 {
+    font-size: 21px;
+    color: var(--blue-dark);
+    margin-bottom: 12px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #eef1fb;
+  }
+  section.card h3 { font-size: 16.5px; color: var(--ink); margin: 18px 0 6px; }
+  section.card p  { color: var(--ink-soft); margin: 10px 0; }
+  section.card ul, section.card ol { padding-left: 22px; margin: 10px 0; }
+  section.card li { color: var(--ink-soft); margin: 6px 0; }
+  section.card blockquote {
+    margin: 12px 0; padding: 12px 16px;
+    background: #f3f6ff;
+    border-radius: 10px;
+    color: var(--ink-soft);
+    font-size: 15.5px;
+  }
+  .back-top {
+    text-align: center;
+    margin-top: 8px;
+  }
+  .back-top a { font-size: 14.5px; }
+
+  footer {
+    background: #101627;
+    color: #9aa3bd;
+    text-align: center;
+    padding: 30px 20px 40px;
+    font-size: 14px;
+  }
+  footer a { color: #c3cbff; border-bottom-color: rgba(195,203,255,.3); }
+  footer .foot-note { margin-top: 8px; opacity: .75; }
+
+  @media (max-width: 560px) {
+    body { font-size: 16px; }
+    section.card, .summary { padding: 20px 18px; }
+    header { padding: 40px 16px 32px; }
+  }
+  @media print {
+    .template-note, .back-top, footer { display: none; }
+    body { background: #fff; font-size: 12pt; }
+    section.card, .summary { box-shadow: none; border-color: #ccc; }
+    header { background: #fff; color: #000; padding: 0 0 12px; }
+    header h1 { color: #000; }
+    .app-mark { display: none; }
+  }
+</style>
+</head>
+<body>
+
+<div class="template-note" role="note">
+  <strong>Template mode:</strong> this box and every highlighted
+  <span style="background:#fff3d0;padding:0 3px;border-radius:3px;">[placeholder]</span>
+  must be filled in before publishing. Search the page for <code>[</code> to find them all,
+  then delete this banner. See the HTML comment at the top of this file for instructions.
+</div>
+
+<header>
+  <div class="header-inner">
+    <div class="app-mark" aria-hidden="true"><div class="tube"></div></div>
+    <h1>Privacy Policy</h1>
+    <p class="sub">for <span class="ph">[YOUR APP NAME]</span> · a mobile puzzle game</p>
+    <span class="updated">Last updated: <span class="ph">[EFFECTIVE DATE]</span></span>
+  </div>
+</header>
+
+<main>
+
+  <div class="summary">
+    <h2>Short version</h2>
+    <ul>
+      <li>The app itself does <strong>not</strong> collect, store or send any personal information.</li>
+      <li>Your game progress stays on your device only, in local storage.</li>
+      <li>The app may display advertisements served by Google&nbsp;AdMob, which uses the standard Android advertising ID and handles its own data processing.</li>
+      <li>You can opt out of personalized ads any time from your device's settings.</li>
+    </ul>
+  </div>
+
+  <section class="card" id="introduction">
+    <h2>1. Introduction</h2>
+    <p>
+      This Privacy Policy explains how <span class="ph">[YOUR APP NAME]</span>
+      ("the App", "we", "us"), operated by <span class="ph">[YOUR NAME]</span>,
+      handles information when you use the App. We are committed to protecting your privacy and
+      keeping things simple and transparent.
+    </p>
+    <p>
+      By downloading or using the App, you agree to the practices described in this policy.
+      If you do not agree, please do not use the App.
+    </p>
+  </section>
+
+  <section class="card" id="data-we-collect">
+    <h2>2. Information We Collect</h2>
+    <h3>2.1 Data collected by the App</h3>
+    <p>
+      The App <strong>does not collect any personal data</strong>. There is no account, no sign-up,
+      no login, no email registration, no cloud sync and no analytics or crash-reporting SDK built
+      into the App. We never ask for your name, email address, phone number or any other identifier.
+    </p>
+    <h3>2.2 Data stored locally on your device</h3>
+    <p>
+      To remember your progress, the App stores small pieces of data on your own device
+      (for example, which levels you have completed, your stars and best move counts).
+      This storage is local-only: it never leaves your device and is never transmitted to us
+      or to any server. Deleting the App will permanently erase this data.
+    </p>
+    <h3>2.3 Anonymous usage for improvement</h3>
+    <p>
+      We do not currently use any third-party analytics. If we add analytics or other data
+      collection in the future, this policy will be updated and those changes will be reflected
+      below before they take effect.
+    </p>
+  </section>
+
+  <section class="card" id="advertising">
+    <h2>3. Advertising (Google AdMob)</h2>
+    <p>
+      The App may display advertisements in the future, provided by <strong>Google AdMob</strong>.
+      AdMob is operated by Google LLC and its privacy practices are governed by
+      <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a>.
+    </p>
+    <p>When the AdMob SDK is active, it may collect and process data such as:</p>
+    <ul>
+      <li>the <strong>Android Advertising ID</strong> (a resettable, non-personal device identifier);</li>
+      <li>IP address and general device information (device model, OS version, screen size, language);</li>
+      <li>information about the app itself and how ads are interacted with;</li>
+      <li>for personalized ads, approximate location and usage data — always in accordance with Google's policies and applicable law.</li>
+    </ul>
+    <p>
+      This data is used to deliver ads, prevent fraud, measure ad performance and, where permitted,
+      show ads that are more relevant to you.
+    </p>
+    <blockquote>
+      AdMob is described here in advance of ad roll-out. If and when ads go live, this section
+      describes exactly how advertising works. No ad or SDK data is processed by the App before ads are activated.
+    </blockquote>
+  </section>
+
+  <section class="card" id="advertising-id">
+    <h2>4. Your Advertising ID &amp; Your Choices</h2>
+    <p>You remain in control of advertising data on your device:</p>
+    <ul>
+      <li>
+        <strong>Opt out of personalized ads:</strong> on your Android device, open
+        <em>Settings&nbsp;&gt; Privacy&nbsp;&gt; Ads</em> and turn on
+        <em>"Delete advertising ID"</em> or <em>"Opt out of Ads Personalization"</em>.
+        You may still see ads, but they will be less relevant.
+      </li>
+      <li><strong>Reset your Advertising ID</strong> at any time from the same settings screen.</li>
+      <li>
+        You can manage interests and opt out of personalized advertising globally via
+        <a href="https://adssettings.google.com" target="_blank" rel="noopener">Google Ads Settings</a>.
+      </li>
+    </ul>
+  </section>
+
+  <section class="card" id="consent">
+    <h2>5. Consent (GDPR, LGPD, and US State Laws)</h2>
+    <p>
+      If you are located in the European Economic Area (EEA), the United Kingdom, or in regions
+      governed by the LGPD (Brazil), CCPA/CPRA, or other privacy laws, we use Google's
+      <strong>User Messaging Platform (UMP)</strong> consent framework, if and when ads are enabled,
+      to obtain your freely given permission before personalized advertising or any advertising at all
+      is shown where the law requires it.
+    </p>
+    <p>You can withdraw or change your consent at any time. If you change consent, the relevant
+    advertising features will be updated accordingly and, where applicable, ads will stop being shown.</p>
+  </section>
+
+  <section class="card" id="children">
+    <h2>6. Children's Privacy</h2>
+    <p>
+      The App is not directed to children under 13 (or under 16 in certain regions) and we do not
+      knowingly collect personal information from children. If you believe a child has provided us
+      with personal information, please contact us at
+      <a href="mailto:[YOUR EMAIL]">[YOUR EMAIL]</a> and we will take steps to delete it promptly.
+    </p>
+    <p>
+      If the App is ever designated as aimed at children, we will comply with the applicable
+      children's privacy regulations, including enabling the appropriate AdMob settings for child-directed apps.
+    </p>
+  </section>
+
+  <section class="card" id="security">
+    <h2>7. Data Security</h2>
+    <p>
+      Because the App does not transmit any personal data, there is very little to protect on our side.
+      The local data stored on your device is protected by your device's own operating system security.
+      Where third-party providers (such as Google) process data, they apply industry-standard security
+      and comply with applicable obligations under relevant data-protection laws.
+    </p>
+  </section>
+
+  <section class="card" id="retention-rights">
+    <h2>8. Data Retention &amp; Your Rights</h2>
+    <p>You have the right to:</p>
+    <ul>
+      <li><strong>Access &amp; deletion:</strong> delete all locally stored App data by uninstalling the App or using your device's "clear app data" option — no account or action on our side is needed.</li>
+      <li><strong>Refuse ads:</strong> opt out of personalized advertising as described in Section 4.</li>
+      <li><strong>Withdraw consent:</strong> change or revoke consent for advertising as described in Section 5.</li>
+    </ul>
+    <p>
+      Data processed by advertising partners is retained only as long as those partners need it to
+      deliver and measure ads, in line with Google's own data-retention policies.
+    </p>
+  </section>
+
+  <section class="card" id="transfers">
+    <h2>9. International Data Transfers</h2>
+    <p>
+      Google may process advertising data on servers located outside your country of residence.
+      Where data is transferred outside the EEA/UK, Google relies on recognized safeguards such as
+      Standard Contractual Clauses to provide an adequate level of protection.
+    </p>
+  </section>
+
+  <section class="card" id="third-party">
+    <h2>10. Third-Party Services &amp; Links</h2>
+    <p>
+      The App does not contain external links to third-party websites. The only third-party service
+      that may process data is Google AdMob, which processes data in accordance with Google's policies.
+      Where applicable, AdMob's data handling is described in
+      <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a>.
+    </p>
+  </section>
+
+  <section class="card" id="changes">
+    <h2>11. Changes to This Policy</h2>
+    <p>
+      We may update this Privacy Policy from time to time. When we do, the "Last updated" date at the
+      top of this page will change, and — where required — you will be given appropriate notice before
+      the changes take effect. Continued use of the App after changes are posted constitutes acceptance
+      of the updated policy.
+    </p>
+  </section>
+
+  <section class="card" id="contact">
+    <h2>12. Contact Us</h2>
+    <p>
+      If you have any questions, concerns or requests regarding this Privacy Policy or your privacy,
+      please contact us at
+      <a href="mailto:[YOUR EMAIL]">[YOUR EMAIL]</a>.
+    </p>
+    <p>
+      App: <span class="ph">[YOUR APP NAME]</span><br>
+      Developer: <span class="ph">[YOUR NAME]</span><br>
+      Policy URL: <span class="ph">[GITHUB PAGES URL]</span><br>
+      Advertising consent contact: <span class="ph">[PRIVACY EMAIL]</span>
+    </p>
+  </section>
+
+  <div class="back-top"><a href="#introduction">&uarr; Back to top</a></div>
+
+</main>
+
+<footer>
+  <p>&copy; <span class="ph">[YOUR NAME]</span> &middot; <span class="ph">[EFFECTIVE DATE]</span></p>
+  <p class="foot-note"><span class="ph">[YOUR APP NAME]</span> — <a href="mailto:[YOUR EMAIL]">[YOUR EMAIL]</a></p>
+</footer>
+
+</body>
+</html>
